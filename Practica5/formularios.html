@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios en html (Inputs)</h1>
+   <hr>
+<form action="">
+<label for="nombre">Nombre</label>
+<input type="text" required placeholder="Ingresa tu nombre" minlength="4" id="Nombre">
+<br>
+<br>
+<label for="apellido">Apellido</label>
+<input type="text" required placeholder="Ingresa tu apellido" minlength="4" id="Apellido">
+<br>
+<br>
+<label for="email">Email</label>
+<input type="text" required placeholder="Ingresa tu email" id="Email">
+<br>
+<br>
+<label for="password">Password</label>
+<input type="password" required id="Password">
+<br>
+<br>
+<!--validar numeros-->
+<label for="numeros">Telefono</label>
+<input type="number" required minlength="0" maxlength="10" id="Telefono">
+
+<!--validar opciones-->
+<h4>Selecciona tu sexo</h4>
+<input type="radio" value="Masculino" id="Masculino">Masculino
+<input type="radio" value="Femenino" id="Femenino">Femenino
+<br>
+<br>
+<!--Seleccionar checkbox-->
+<h4>Selecciona los aparatos electrónicos con los que cuentas en tu casa</h4>
+<input type="checkbox" value="laptop" id="1">Laptop
+<br>
+<input type="checkbox" value="tv" id="2">TV
+<br>
+<input type="checkbox" value="camara" id="3">Camara
+<br>
+<input type="checkbox" value="celular" id="4" checked>Celular
+<br>
+<input type="checkbox" value="tableta" id="5">Tableta
+<br>
+<br>
+<label for="">Selecciona una opción</label>
+<select id="País">
+<option value="0">Selecciona un País</option>
+<option value="1">México</option>
+<option value="2">EUA</option>
+<option value="3">Francia</option>
+<option value="4">Italia</option>
+<option value="5">España</option>
+</select>
+<br>
+<br>
+<label for="fecha">Selecciona una fecha</label>
+<input type="date" minlength="01-01-2020" maxlength="31-12-2020" value="2020-09-04">
+<br>
+<br>
+<label for="mes">Selecciona el mes</label>
+<input type="month" minlength="2020-01" maxlength="2020-12" value="2020-09">
+<br>
+<br>
+<label for="año">Selecciona el año</label>
+<input type="year" minlength="2010" maxlength="2020" value="2020">
+<br>
+<br>
+<label for="color">Selecciona un color</label>
+<input type="color"/>
+<br>
+<br>
+<label for="Volumen">Volumen</label>
+<input type="range"/>
+<br>
+<br>
+<label for="">Comentarios:</label>
+<br>
+<textarea id="Comentarios" cols="20" rows="10" required></textarea>
+<br>
+<label for="">Transporte:</label>
+<br>
+<textarea id="Transporte" cols="10" rows="10">
+    Camión
+    Carro
+    Bicicleta
+    Motoneta
+    Patines
+    Moto
+    Avión
+</textarea>
+<input type="submit" value="Enviar">
+</form>
+</body>
+</html>
+<!--la etiqueta hr es para poner una linea y dividir la informacion del texto-->
+<!--min es el tamaño minimo del texto-->
+<!--id es el identificador del imput-->
+<!--required es un campo obligatorio, placeholder es una guia para que el usuario escriba-->
+<!--checked es para que carge la pag-->
+<!--minlength es para el minimo de letras y maxlength es para el maximo de letras-->
+<!--select se utiliza para seleccionar la informacion y opction para ingresar los datos-->
+<!--textarea es una etiqueta para ingresar texto-->
